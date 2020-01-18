@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import MapKit
 
+let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+
 precedencegroup PowerPrecedence { higherThan: MultiplicationPrecedence }
 infix operator ^^ : PowerPrecedence
 func ^^ (radix: Int, power: Int) -> Int {

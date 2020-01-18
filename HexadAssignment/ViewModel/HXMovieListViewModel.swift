@@ -11,6 +11,7 @@ import Foundation
 protocol HXMovieListViewModelDelegate {
     func shouldRefreshTableViews()
     func shouldShowError(error: String)
+    func shouldUpdateRatingForMovieModel(_ model: HXMovieModel, with value: Double)
 }
 
 class HXMovieListViewModel: NSObject {
@@ -21,8 +22,8 @@ class HXMovieListViewModel: NSObject {
         }
     }
     var delegate: HXMovieListViewModelDelegate?
-
     var stoppedRandomRating: Bool = false
+    var maxIntervalForRandomRating = 10.0
     
     init(movies: [HXMovieModel] = [], delegate: HXMovieListViewModelDelegate? = nil) {
         self.movies = movies
@@ -48,12 +49,12 @@ class HXMovieListViewModel: NSObject {
     func updateRating(for movie: HXMovieModel, with value: Double) {
         var ratedMovie = movie
         ratedMovie.rating = value
-        let index = self.movies.firstIndex { (iteratedMovie) -> Bool in
+        let index = movies.firstIndex { (iteratedMovie) -> Bool in
             return movie.title == iteratedMovie.title
         }
         if let arrayIndex = index {
             self.movies[arrayIndex] = ratedMovie
-            self.movies = self.movies.sorted()
+            self.movies = movies.sorted()
             self.delegate?.shouldRefreshTableViews()
         }
     }
@@ -62,10 +63,10 @@ class HXMovieListViewModel: NSObject {
     //    - Parameters: None
     //    - Returns: Void
     func startRandomRating() {
-        let randomTiming = Double.random(in: 0...10)
+        let randomTiming = Double.random(in: 0...maxIntervalForRandomRating)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + randomTiming) {
             if !self.stoppedRandomRating {
-                let randomMovieIndex = Int.random(in: 0..<10)
+                let randomMovieIndex = Int.random(in: 0..<self.movies.count)
                 let randomRating = Double.random(in: 1...10)
                 let ratedMovie = self.movies[randomMovieIndex]
                 self.updateRating(for: ratedMovie, with: randomRating.roundedToDecimals(1))

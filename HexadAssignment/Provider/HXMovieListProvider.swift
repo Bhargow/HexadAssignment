@@ -21,11 +21,14 @@ class HXMovieListProvider {
         self.bundle = bundle
     }
 
-    func getMovieList(from file: String) throws -> [HXMovieModel] {
+    //    - Description: Reads the data from .json file and returns movie list
+    //    - Parameters: fileName: String
+    //    - Returns: Void
+    func getMovieList(from fileName: String) throws -> [HXMovieModel] {
 
         var movieList: [HXMovieModel] = []
-        guard let url = bundle.url(forResource: file, withExtension: ".json") else {
-            throw HXMovieListProviderError.invalidFileName(file)
+        guard let url = bundle.url(forResource: fileName, withExtension: ".json") else {
+            throw HXMovieListProviderError.invalidFileName(fileName)
         }
         
         do {

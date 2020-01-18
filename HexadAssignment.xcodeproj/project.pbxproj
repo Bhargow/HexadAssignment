@@ -25,6 +25,8 @@
 		2993561023D0E40500CDEA3F /* HexadAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993560F23D0E40500CDEA3F /* HexadAssignmentTests.swift */; };
 		2993561B23D0E40500CDEA3F /* HexadAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993561A23D0E40500CDEA3F /* HexadAssignmentUITests.swift */; };
 		2993562C23D0FE1A00CDEA3F /* HXMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2993562B23D0FE1A00CDEA3F /* HXMovieModel.swift */; };
+		29A0D01323D2B2DA0027DC3B /* HXMovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0D01223D2B2DA0027DC3B /* HXMovieDetailsViewController.swift */; };
+		29A0D01523D2B3910027DC3B /* HXMovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0D01423D2B3910027DC3B /* HXMovieDetailsViewModel.swift */; };
 		29B823B823D218BF00770084 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B823B723D218BF00770084 /* StarRatingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		2993561A23D0E40500CDEA3F /* HexadAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadAssignmentUITests.swift; sourceTree = "<group>"; };
 		2993561C23D0E40500CDEA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2993562B23D0FE1A00CDEA3F /* HXMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXMovieModel.swift; sourceTree = "<group>"; };
+		29A0D01223D2B2DA0027DC3B /* HXMovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXMovieDetailsViewController.swift; sourceTree = "<group>"; };
+		29A0D01423D2B3910027DC3B /* HXMovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HXMovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		29B823B723D218BF00770084 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				299355F923D0E40400CDEA3F /* HXMovieListViewController.swift */,
+				29A0D01223D2B2DA0027DC3B /* HXMovieDetailsViewController.swift */,
 				2937B1B023D12A1E00010669 /* HXMovieListTableViewCell.swift */,
 			);
 			path = View;
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				2937B1AB23D1126400010669 /* HXMovieListViewModel.swift */,
+				29A0D01423D2B3910027DC3B /* HXMovieDetailsViewModel.swift */,
 				2937B1B423D1F54700010669 /* HXMovieCellViewModel.swift */,
 			);
 			path = ViewModel;
@@ -344,11 +350,13 @@
 				299355F623D0E40400CDEA3F /* AppDelegate.swift in Sources */,
 				2937B1B323D12D1B00010669 /* HXConstants&Extenstions.swift in Sources */,
 				2993562C23D0FE1A00CDEA3F /* HXMovieModel.swift in Sources */,
+				29A0D01523D2B3910027DC3B /* HXMovieDetailsViewModel.swift in Sources */,
 				2937B1AF23D1171300010669 /* HXMovieListProvider.swift in Sources */,
 				29B823B823D218BF00770084 /* StarRatingView.swift in Sources */,
 				2937B1AC23D1126400010669 /* HXMovieListViewModel.swift in Sources */,
 				2937B1B523D1F54700010669 /* HXMovieCellViewModel.swift in Sources */,
 				299355F823D0E40400CDEA3F /* SceneDelegate.swift in Sources */,
+				29A0D01323D2B2DA0027DC3B /* HXMovieDetailsViewController.swift in Sources */,
 				2993560023D0E40400CDEA3F /* HexadAssignment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

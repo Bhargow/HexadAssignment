@@ -59,7 +59,6 @@ extension HXMovieListViewController: UITableViewDataSource {
             "HXMovieListTableViewCell", for: indexPath) as? HXMovieListTableViewCell {
             let cellData = movieListViewModel.movies[indexPath.row]
             cell.movieViewModel = HXMovieCellViewModel(movieData: cellData)
-            cell.ratingView.delegate = self
             cell.ratingView.tag = indexPath.row
             return cell
         }
@@ -72,27 +71,26 @@ extension HXMovieListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellData = movieListViewModel.movies[indexPath.row]
+        let movieDetailsViewController = mainStoryBoard.instantiateViewController(withIdentifier: "HXMovieDetailsViewController") as! HXMovieDetailsViewController
+        movieDetailsViewController.movieDetailsViewModel = HXMovieDetailsViewModel(movieData: cellData, delegate: self)
+        self.navigationController?.pushViewController(movieDetailsViewController, animated: true)
+    }
 }
 
 // MARK: MovieList ViewModel Delegate Methods
 extension HXMovieListViewController: HXMovieListViewModelDelegate {
-    
+    func shouldUpdateRatingForMovieModel(_ model: HXMovieModel, with value: Double) {
+        self.movieListViewModel.updateRating(for: model, with: value.roundedToDecimals(1))
+    }
+
     func shouldRefreshTableViews() {
         self.tblViewMovieList.reloadData()
     }
     
     func shouldShowError(error: String) {
         showAlertViewWithBlock(message: error, btnTitleOne: "Ok")
-    }
-}
-
-// MARK: StarRating Delegate Methods
-extension HXMovieListViewController: StarRatingDelegate {
-    //    - Description: Star rating delegate that updates the rating in the movie list
-    //    - Parameters: view: StarRatingView, value: CGFloat
-    //    - Returns: Void
-    func StarRatingValueChanged(view: StarRatingView, value: CGFloat) {
-        let ratedMovie = self.movieListViewModel.movies[view.tag]
-        self.movieListViewModel.updateRating(for: ratedMovie, with: Double(value).roundedToDecimals(1))
     }
 }
