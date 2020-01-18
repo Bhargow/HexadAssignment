@@ -1,0 +1,138 @@
+[{
+		"title": "The Godfather: Part II",
+		"description": "In the midst of trying to legitimize his business dealings in New York City and Italy in 1979, aging Mafia Don Michael Corleone seeks to avow for his sins, while taking his nephew Vincent Mancini under his wing.",
+		"releaseDate": "Dec 25 1990",
+		"genre": "Drama",
+		"rating": 7.6,
+        "image" : "TheGodfather:PartII"
+	},
+	{
+		"title": "The Shawshank Redemption",
+		"description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+		"releaseDate": "Sep 23 1994",
+		"genre": "Drama",
+		"rating": 9.2,
+        "image" : "TheShawshankRedemption"
+	},
+	{
+		"title": "The Godfather",
+		"description": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+		"releaseDate": "Dec 11 1974",
+		"genre": "Crime, Drama",
+		"rating": 9.0,
+        "image" : "TheGodfather"
+	},
+	{
+		"title": "The Dark Knight",
+		"description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+		"releaseDate": "Jul 18 2008",
+		"genre": "Action",
+		"rating": 8.9,
+        "image" : "TheDarkKnight"
+	},
+	{
+		"title": "12 Angry Men",
+		"description": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+		"releaseDate": "Apr 13 1957",
+		"genre": "Drama",
+		"rating": 8.9,
+        "image" : "12AngryMen"
+	},
+	{
+		"title": "Schindler's List",
+		"description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+		"releaseDate": "Dec 15 1993",
+		"genre": "Drama",
+		"rating": 8.9,
+        "image" : "Schindler'sList"
+	},
+	{
+		"title": "The Lord of the Rings: The Return of the King",
+		"description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+		"releaseDate": "Dec 17 2003",
+		"genre": "Adventure",
+        "rating": 8.8,
+        "image" : "TheLordoftheRings:TheReturnoftheKing"
+        
+	},
+	{
+		"title": "Pulp Fiction",
+		"description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+		"releaseDate": "Oct 14 1994",
+		"genre": "Drama",
+        "rating": 8.9,
+        "image" : "PulpFiction"
+	},
+	{
+		"title": "The Lord of the Rings: The Fellowship of the Ring",
+		"description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+		"releaseDate": "Dec 19 2001",
+		"genre": "Adventure",
+		"rating": 8.8,
+        "image" : "TheLordoftheRings:TheFellowshipoftheRing"
+	},
+	{
+		"title": "Fight Club",
+		"description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+		"releaseDate": "Oct 15 1999",
+		"genre": "Drama",
+		"rating": 8.8,
+        "image" : "FightClub"
+	},
+	{
+		"title": "Forrest Gump",
+		"description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.",
+		"releaseDate": "Jul 06 1994",
+		"genre": "Drama",
+		"rating": 8.6,
+        "image" : "ForrestGump"
+	},
+	{
+		"title": "Inception",
+		"description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+		"releaseDate": "Jul 16 2010",
+		"genre": "Thriller/Suspense",
+		"rating": 9.1,
+        "image" : "Inception"
+	},
+	{
+		"title": "Star Wars Ep. V: The Empire Strikes Back",
+		"description": "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
+		"releaseDate": "May 21 1980",
+		"genre": "Adventure",
+		"rating": 8.7,
+        "image" : "StarWarsEp.V:TheEmpireStrikesBack"
+	},
+	{
+		"title": "The Matrix",
+		"description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+		"releaseDate": "Mar 31 1999",
+		"genre": "Action",
+		"rating": 8.7,
+        "image" : "TheMatrix"
+	},
+	{
+		"title": "The Silence of the Lambs",
+		"description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+		"releaseDate": "Feb 14 1991",
+		"genre": "Thriller/Suspense",
+		"rating": 8.7,
+        "image" : "TheSilenceoftheLambs"
+	},
+	{
+		"title": "The Green Mile",
+		"description": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+		"releaseDate": "Dec 10 1999",
+		"genre": "Drama",
+		"rating": 8.4,
+        "image" : "TheGreenMile"
+	},
+	{
+		"title": "Around the World in 80 Days",
+		"description": "To win a bet, an eccentric British inventor, beside his Chinese valet and an aspiring French artist, embarks on a trip full of adventures and dangers around the world in exactly eighty days.",
+		"releaseDate": "Jun 16 2004",
+		"genre": "Adventure",
+		"rating": 5.6,
+        "image" : "AroundtheWorldin80Days"
+	}
+]
